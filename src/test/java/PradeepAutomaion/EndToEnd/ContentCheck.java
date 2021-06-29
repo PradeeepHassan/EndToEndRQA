@@ -25,7 +25,7 @@ public void textCheck() throws IOException {
 		QaAccademyHomePage qa=new QaAccademyHomePage(driver);
 		qa.handlingHomePagePopup();
 		System.out.println(qa.checkText());
-		System.out.println();
+		
 		Assert.assertEquals(qa.checkText(), "FEATURED COURSES");
 		Assert.assertTrue(qa.contactCheck());
 		log.info("text content checked properly");
